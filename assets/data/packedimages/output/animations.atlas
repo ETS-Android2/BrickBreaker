@@ -1,0 +1,209 @@
+
+animations.png
+size: 2048, 512
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+ball
+  rotate: false
+  xy: 1818, 254
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+blank
+  rotate: false
+  xy: 1906, 382
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+brick_blue
+  rotate: false
+  xy: 992, 266
+  size: 202, 62
+  orig: 202, 62
+  offset: 0, 0
+  index: -1
+brick_darkpurple
+  rotate: false
+  xy: 1294, 448
+  size: 202, 62
+  orig: 202, 62
+  offset: 0, 0
+  index: -1
+brick_green
+  rotate: false
+  xy: 1294, 384
+  size: 202, 62
+  orig: 202, 62
+  offset: 0, 0
+  index: -1
+brick_metal_bottom
+  rotate: false
+  xy: 1498, 448
+  size: 202, 62
+  orig: 202, 62
+  offset: 0, 0
+  index: -1
+brick_metal_top
+  rotate: false
+  xy: 1498, 384
+  size: 202, 62
+  orig: 202, 62
+  offset: 0, 0
+  index: -1
+brick_orange
+  rotate: false
+  xy: 1702, 448
+  size: 202, 62
+  orig: 202, 62
+  offset: 0, 0
+  index: -1
+brick_pink
+  rotate: false
+  xy: 1702, 384
+  size: 202, 62
+  orig: 202, 62
+  offset: 0, 0
+  index: -1
+brick_purple
+  rotate: false
+  xy: 1294, 320
+  size: 202, 62
+  orig: 202, 62
+  offset: 0, 0
+  index: -1
+brick_red
+  rotate: false
+  xy: 1498, 320
+  size: 202, 62
+  orig: 202, 62
+  offset: 0, 0
+  index: -1
+brick_silver
+  rotate: false
+  xy: 1702, 320
+  size: 202, 62
+  orig: 202, 62
+  offset: 0, 0
+  index: -1
+brick_yellow
+  rotate: false
+  xy: 606, 6
+  size: 202, 62
+  orig: 202, 62
+  offset: 0, 0
+  index: -1
+expand
+  rotate: false
+  xy: 908, 122
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+extra_ball
+  rotate: false
+  xy: 1038, 136
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+extra_life
+  rotate: false
+  xy: 1906, 252
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+fire
+  rotate: false
+  xy: 810, 2
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+paddle
+  rotate: false
+  xy: 992, 330
+  size: 300, 180
+  orig: 300, 180
+  offset: 0, 0
+  index: -1
+paddle_growing
+  rotate: false
+  xy: 2, 30
+  size: 300, 480
+  orig: 300, 480
+  offset: 0, 0
+  index: -1
+paddle_large
+  rotate: false
+  xy: 606, 70
+  size: 300, 180
+  orig: 300, 180
+  offset: 0, 0
+  index: -1
+paddle_shrinking
+  rotate: false
+  xy: 304, 30
+  size: 300, 480
+  orig: 300, 480
+  offset: 0, 0
+  index: -1
+plus10
+  rotate: false
+  xy: 1168, 136
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+plus25
+  rotate: false
+  xy: 1298, 190
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+plus50
+  rotate: false
+  xy: 1428, 190
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+plus75
+  rotate: false
+  xy: 1558, 190
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+shrink
+  rotate: false
+  xy: 1688, 190
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+slowdown
+  rotate: false
+  xy: 606, 382
+  size: 384, 128
+  orig: 384, 128
+  offset: 0, 0
+  index: -1
+speedup
+  rotate: false
+  xy: 606, 252
+  size: 384, 128
+  orig: 384, 128
+  offset: 0, 0
+  index: -1
+star
+  rotate: false
+  xy: 810, 36
+  size: 33, 32
+  orig: 33, 32
+  offset: 0, 0
+  index: -1

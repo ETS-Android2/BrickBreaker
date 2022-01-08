@@ -1,0 +1,55 @@
+
+text.png
+size: 2048, 512
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+area_cleared
+  rotate: false
+  xy: 2, 228
+  size: 532, 224
+  orig: 532, 224
+  offset: 0, 0
+  index: -1
+bad_luck
+  rotate: false
+  xy: 2, 2
+  size: 532, 224
+  orig: 532, 224
+  offset: 0, 0
+  index: -1
+gameover
+  rotate: false
+  xy: 536, 167
+  size: 419, 285
+  orig: 419, 285
+  offset: 0, 0
+  index: -1
+getready
+  rotate: false
+  xy: 957, 352
+  size: 420, 100
+  orig: 420, 100
+  offset: 0, 0
+  index: -1
+missed
+  rotate: false
+  xy: 957, 250
+  size: 420, 100
+  orig: 420, 100
+  offset: 0, 0
+  index: -1
+oh_no
+  rotate: false
+  xy: 1379, 352
+  size: 420, 100
+  orig: 420, 100
+  offset: 0, 0
+  index: -1
+try_again
+  rotate: false
+  xy: 1379, 250
+  size: 420, 100
+  orig: 420, 100
+  offset: 0, 0
+  index: -1
