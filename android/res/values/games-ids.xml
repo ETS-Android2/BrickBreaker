@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Google Play game services IDs. Save this file as res/values/games-ids.xml in your project.-->
+<resources>
+    <!--app_name-->
+    <string name="app_name" translatable="false">Brickbreaker</string>
+    <!--app_id-->
+    <string name="app_id" translatable="false">950759813115</string>
+    <!--package_name-->
+    <string name="package_name" translatable="false">com.richikin.brickbreaker</string>
+    <!--achievement Double Up-->
+    <string name="achievement_double_up" translatable="false">CgkI-9_N7dUbEAIQAA</string>
+    <!--achievement Extra Life-->
+    <string name="achievement_extra_life" translatable="false">CgkI-9_N7dUbEAIQAQ</string>
+    <!--achievement Faster Faster-->
+    <string name="achievement_faster_faster" translatable="false">CgkI-9_N7dUbEAIQAg</string>
+    <!--achievement Slow Poke-->
+    <string name="achievement_slow_poke" translatable="false">CgkI-9_N7dUbEAIQAw</string>
+    <!--achievement Have You Got Nothing Better To Do?-->
+    <string name="achievement_nothing_better" translatable="false">CgkI-9_N7dUbEAIQBA</string>
+    <!--achievement A Powerful Score-->
+    <string name="achievement_powerful_score" translatable="false">CgkI-9_N7dUbEAIQBQ</string>
+</resources>

@@ -84,8 +84,7 @@ public class Paddle extends GdxSprite
         if (App.getGameProgress().lives.isEmpty())
         {
             setActionState(ActionStates._DYING);
-        }
-        else
+        } else
         {
             if (App.getAppState().peek() == StateID._STATE_PAUSED)
             {
@@ -114,8 +113,7 @@ public class Paddle extends GdxSprite
         if (isStretched)
         {
             super.updateCollisionBox();
-        }
-        else
+        } else
         {
             collisionObject.rectangle.x      = sprite.getX() + ((frameWidth / 3.0f) / 2);
             collisionObject.rectangle.y      = sprite.getY();
@@ -169,11 +167,7 @@ public class Paddle extends GdxSprite
 
                 checkButtons();
 
-                sprite.translate
-                    (
-                        (speed.getX() * direction.getX()),
-                        (speed.getY() * direction.getY())
-                    );
+                movePaddle();
             }
             break;
 
@@ -192,6 +186,21 @@ public class Paddle extends GdxSprite
         }
     }
 
+    public void movePaddle()
+    {
+        sprite.translate((speed.getX() * direction.getX()), (speed.getY() * direction.getY()));
+
+        if (sprite.getX() < Gfx._LEFT_BOUNDARY)
+        {
+            sprite.setX(Gfx._LEFT_BOUNDARY);
+        }
+
+        if ((sprite.getX() + frameWidth) > Gfx._RIGHT_BOUNDARY)
+        {
+            sprite.setX(Gfx._RIGHT_BOUNDARY - frameWidth);
+        }
+    }
+
     public void setExpanded(boolean expanded)
     {
         SpriteDescriptor descriptor = App.getEntities().getDescriptor(GraphicID.G_PADDLE);
@@ -201,8 +210,7 @@ public class Paddle extends GdxSprite
             descriptor._ASSET = GameAssets._PADDLE_EXPANDED_ASSET;
 
             isStretched = true;
-        }
-        else
+        } else
         {
             descriptor._ASSET = GameAssets._PADDLE_ASSET;
 
@@ -225,16 +233,14 @@ public class Paddle extends GdxSprite
                 isMovingX = true;
 
                 setActionState(ActionStates._RUNNING);
-            }
-            else
+            } else
             {
                 direction.setX(Movement._DIRECTION_STILL);
                 isMovingX = false;
 
                 setActionState(ActionStates._STANDING);
             }
-        }
-        else
+        } else
         {
             if (App.getHud().buttonRight.isPressed())
             {
@@ -244,16 +250,14 @@ public class Paddle extends GdxSprite
                     isMovingX = true;
 
                     setActionState(ActionStates._RUNNING);
-                }
-                else
+                } else
                 {
                     direction.setX(Movement._DIRECTION_STILL);
                     isMovingX = false;
 
                     setActionState(ActionStates._STANDING);
                 }
-            }
-            else
+            } else
             {
                 direction.setX(Movement._DIRECTION_STILL);
                 isMovingX = false;

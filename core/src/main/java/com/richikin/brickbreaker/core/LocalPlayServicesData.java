@@ -11,18 +11,12 @@ public class LocalPlayServicesData
     //@formatter:off
     private final String[][] achievements =
         {
-            // TODO: 07/01/2022
-            {"achievement_base_destroyed",      "CgkIvdearaEYEAIQBA"},
-            {"achievement_millionaire",         "CgkIvdearaEYEAIQBQ"},
-            {"achievement_score_500k",          "CgkIvdearaEYEAIQBg"},
-            {"achievement_score_100k",          "CgkIvdearaEYEAIQBw"},
-            {"achievement_shoot_a_missile",     "CgkIvdearaEYEAIQCA"},
-            {"achievement_courier_services",    "CgkIvdearaEYEAIQCQ"},
-            {"achievement_bridge_building",     "CgkIvdearaEYEAIQDQ"},
-            {"achievement_beam_me_up",          "CgkIvdearaEYEAIQCg"},
-            {"achievement_gunman_jetman",       "CgkIvdearaEYEAIQCw"},
-            {"achievement_bomb_collector",      "CgkIvdearaEYEAIQDA"},
-            {"achievement_moon_rider",          "CgkIvdearaEYEAIQDg"},
+            {"achievement_douple_up",       "CgkI-9_N7dUbEAIQAA"},
+            {"achievement_extra_life",      "CgkI-9_N7dUbEAIQAQ"},
+            {"achievement_faster_faster",   "CgkI-9_N7dUbEAIQAg"},
+            {"achievement_slow_poke",       "CgkI-9_N7dUbEAIQAw"},
+            {"achievement_nothing_better",  "CgkI-9_N7dUbEAIQBA"},
+            {"achievement_powerful_score",  "CgkI-9_N7dUbEAIQBQ"},
         };
 
     private final String[][] leaderboards =

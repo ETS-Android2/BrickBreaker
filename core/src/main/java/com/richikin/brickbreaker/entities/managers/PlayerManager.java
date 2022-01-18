@@ -44,7 +44,7 @@ public class PlayerManager extends BasicEntityManager
     {
         descriptor             = App.getEntities().getDescriptor(GraphicID.G_PADDLE);
         descriptor._POSITION.x = (Gfx._VIEW_WIDTH - descriptor._SIZE.x) / 2;
-        descriptor._POSITION.y = 5 * descriptor._SIZE.y;
+        descriptor._POSITION.y = 8 * descriptor._SIZE.y;
         descriptor._POSITION.z = App.getEntityUtils().getInitialZPosition(GraphicID.G_PADDLE);
         descriptor._INDEX      = App.getEntityData().getEntityMap().size;
     }

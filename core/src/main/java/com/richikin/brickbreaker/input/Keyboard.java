@@ -350,11 +350,40 @@ public class Keyboard extends InputAdapter
             // delta.x < 0 means the touch moved to the left.
             // delta.x == 0 means no movement.
 
+//            if (delta.x != 0)
+//            {
+//                if (delta.x > 0)
+//                {
+//                    App.getHud().buttonRight.press();
+//                    App.getHud().buttonLeft.release();
+//                }
+//                else
+//                {
+//                    App.getHud().buttonLeft.press();
+//                    App.getHud().buttonRight.release();
+//                }
+//            }
+//            else
+//            {
+//                App.getHud().buttonLeft.release();
+//                App.getHud().buttonRight.release();
+//            }
+
             if (isTouchedDown
-                && (lastTouchPoint.x < (Gfx._VIEW_WIDTH - App.getPlayer().frameWidth))
-                && (lastTouchPoint.x > 0))
+                && (lastTouchPoint.x < (Gfx._RIGHT_BOUNDARY - App.getPlayer().frameWidth))
+                && (lastTouchPoint.x > Gfx._LEFT_BOUNDARY))
             {
                 App.getPlayer().sprite.setPosition(touchX, App.getPlayer().sprite.getY());
+
+                if (App.getPlayer().sprite.getX() < Gfx._LEFT_BOUNDARY)
+                {
+                    App.getPlayer().sprite.setX(Gfx._LEFT_BOUNDARY);
+                }
+
+                if ((App.getPlayer().sprite.getX() + App.getPlayer().frameWidth) > Gfx._RIGHT_BOUNDARY)
+                {
+                    App.getPlayer().sprite.setX(Gfx._RIGHT_BOUNDARY - App.getPlayer().frameWidth);
+                }
             }
 
             lastTouchPoint.set(touchX, touchY);

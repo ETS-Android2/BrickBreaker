@@ -2,7 +2,21 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 android {
-	compileSdkVersion 30
+	signingConfigs {
+        debug {
+            storeFile file('C:\\Development\\Documents\\Signing\\signing_info.txt')
+            keyAlias 'debug'
+            storePassword 'felix'
+            keyPassword 'airwolf'
+        }
+        release {
+            storeFile file('C:\\Development\\Documents\\Signing\\signing_info.txt')
+            storePassword 'felix'
+            keyAlias 'release'
+            keyPassword 'commando'
+        }
+    }
+    compileSdkVersion 30
 	sourceSets {
 		main {
 			manifest.srcFile 'AndroidManifest.xml'
