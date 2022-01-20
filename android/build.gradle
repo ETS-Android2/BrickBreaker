@@ -4,14 +4,14 @@ apply plugin: 'kotlin-android'
 android {
 	signingConfigs {
         debug {
-            storeFile file('C:\\Development\\Documents\\Signing\\signing_info.txt')
+            storeFile file('c:/development/documents/brickbreaker.keystore')
             keyAlias 'debug'
-            storePassword 'felix'
+            storePassword 'felix1964'
             keyPassword 'airwolf'
         }
         release {
-            storeFile file('C:\\Development\\Documents\\Signing\\signing_info.txt')
-            storePassword 'felix'
+            storeFile file('c:/development/documents/brickbreaker.keystore')
+            storePassword 'felix1964'
             keyAlias 'release'
             keyPassword 'commando'
         }
@@ -61,8 +61,12 @@ android {
 		release {
 			minifyEnabled false
 			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-		}
-	}
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
 
 }
 

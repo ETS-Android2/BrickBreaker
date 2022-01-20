@@ -127,8 +127,8 @@ public class AppConfig implements IApplicationConfig
             Trace.dbg("Temporary Development Settings");
 
             setAndroidOnDesktop(GdxSystem.inst().isDesktopApp());
-            setGodMode(true);
-//            setGodMode(false);
+//            setGodMode(true);
+            setGodMode(false);
 
             final String[] disableList =
                 {
@@ -140,11 +140,11 @@ public class AppConfig implements IApplicationConfig
                     Settings._TILE_BOXES,
                     Settings._SPRITE_BOXES,
                     Settings._BOX2D_PHYSICS,
-                    Settings._MENU_SCENE,
                 };
 
             final String[] enableList =
                 {
+                    Settings._MENU_SCENE,
                     Settings._INSTALLED,
                 };
 
